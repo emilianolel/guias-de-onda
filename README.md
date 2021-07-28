@@ -1,4 +1,4 @@
-# analisis_imagenes
+# Práctica de Laboratorio de Física Contemporánea I: Guias de Onda
 
 Este es el análisis correspondiente a la primera práctica del Laboratorio de Física Contemporánea I
 
