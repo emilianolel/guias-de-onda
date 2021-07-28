@@ -1,6 +1,6 @@
 # Práctica de Laboratorio de Física Contemporánea I: Guias de Onda
 
-Este es el análisis correspondiente a la primera práctica del Laboratorio de Física Contemporánea I
+En este proyecto de gitlab se encuentra el análisis correspondiente a la primera práctica del Laboratorio de Física Contemporánea I
 
 ## Equipo: :alien:
 
