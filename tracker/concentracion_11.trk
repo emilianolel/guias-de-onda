@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object class="org.opensourcephysics.cabrillo.tracker.TFrame">
+    <property name="tabs" type="array" class="[[Ljava.lang.String;">
+        <property name="[0]" type="array" class="[Ljava.lang.String;">
+            <property name="[0]" type="string">C:/Users/eherr/OneDrive/Documents/analisis_imagenes/tracker/angulo_critico_11.trk</property>
+            <property name="[1]" type="string">angulo_critico_11.trk</property>
+        </property>
+        <property name="[1]" type="array" class="[Ljava.lang.String;">
+            <property name="[0]" type="string">C:/Users/eherr/OneDrive/Documents/analisis_imagenes/tracker/perfil_incidente_11.trk</property>
+            <property name="[1]" type="string">perfil_incidente_11.trk</property>
+        </property>
+        <property name="[2]" type="array" class="[Ljava.lang.String;">
+            <property name="[0]" type="string">C:/Users/eherr/OneDrive/Documents/analisis_imagenes/tracker/perfil_reflejado_11.trk</property>
+            <property name="[1]" type="string">perfil_reflejado_11.trk</property>
+        </property>
+    </property>
+</object>
