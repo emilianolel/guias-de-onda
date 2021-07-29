@@ -4,16 +4,16 @@
     <property name="width" type="double">1200.0</property>
     <property name="height" type="double">1600.0</property>
     <property name="magnification" type="double">2.0</property>
-    <property name="center_x" type="int">656</property>
-    <property name="center_y" type="int">421</property>
+    <property name="center_x" type="int">953</property>
+    <property name="center_y" type="int">1592</property>
     <property name="videoclip" type="object">
     <object class="org.opensourcephysics.media.core.VideoClip">
         <property name="video" type="object">
         <object class="org.opensourcephysics.media.core.ImageVideo">
             <property name="paths" type="array" class="[Ljava.lang.String;">
-                <property name="[0]" type="string">../imagenes/haz_31.jpeg</property>
+                <property name="[0]" type="string">../imagenes/angulo_critico_31.jpeg</property>
             </property>
-            <property name="path" type="string">../imagenes/haz_31.jpeg</property>
+            <property name="path" type="string">../imagenes/angulo_critico_31.jpeg</property>
             <property name="delta_t" type="double">100.0</property>
         </object>
         </property>
@@ -30,7 +30,7 @@
     <object class="org.opensourcephysics.media.core.StepperClipControl">
         <property name="rate" type="double">1.0</property>
         <property name="delta_t" type="double">100.0</property>
-        <property name="frame" type="int">0</property>
+        <property name="frame" type="int">2</property>
     </object>
     </property>
     <property name="coords" type="object">
@@ -42,11 +42,11 @@
         <property name="framedata" type="array" class="[Lorg.opensourcephysics.media.core.ImageCoordSystem$FrameData;">
             <property name="[0]" type="object">
             <object class="org.opensourcephysics.media.core.ImageCoordSystem$FrameData">
-                <property name="xorigin" type="double">91.00000000000004</property>
-                <property name="yorigin" type="double">945.0</property>
-                <property name="angle" type="double">0.0</property>
-                <property name="xscale" type="double">148.75</property>
-                <property name="yscale" type="double">148.75</property>
+                <property name="xorigin" type="double">669.0</property>
+                <property name="yorigin" type="double">828.0</property>
+                <property name="angle" type="double">1.5952925404534124</property>
+                <property name="xscale" type="double">69.1796800007054</property>
+                <property name="yscale" type="double">69.1796800007054</property>
             </object>
             </property>
         </property>
@@ -93,10 +93,10 @@
             <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
                 <property name="[0]" type="object">
                 <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
-                    <property name="x1" type="double">475.0</property>
-                    <property name="y1" type="double">1291.0</property>
-                    <property name="x2" type="double">475.0</property>
-                    <property name="y2" type="double">993.5</property>
+                    <property name="x1" type="double">498.25</property>
+                    <property name="y1" type="double">689.75</property>
+                    <property name="x2" type="double">636.5</property>
+                    <property name="y2" type="double">684.25</property>
                 </object>
                 </property>
             </property>
@@ -121,91 +121,20 @@
             <property name="trail" type="boolean">false</property>
             <property name="fixed" type="boolean">true</property>
             <property name="framedata" type="array" class="[[D">
-                <property name="array" type="string">{{353.0000000000001,1446.0,353.00000000000006,578.0,92.00000000000004,946.0}}</property>
-            </property>
-        </object>
-        </property>
-        <property name="item" type="object">
-        <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure">
-            <property name="name" type="string">cinta A</property>
-            <property name="color" type="object">
-            <object class="java.awt.Color">
-                <property name="red" type="int">0</property>
-                <property name="green" type="int">0</property>
-                <property name="blue" type="int">0</property>
-                <property name="alpha" type="int">255</property>
-            </object>
-            </property>
-            <property name="footprint" type="string">Footprint.DoubleArrow</property>
-            <property name="visible" type="boolean">true</property>
-            <property name="trail" type="boolean">false</property>
-            <property name="fixedtape" type="boolean">true</property>
-            <property name="fixedlength" type="boolean">true</property>
-            <property name="readonly" type="boolean">true</property>
-            <property name="stickmode" type="boolean">false</property>
-            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
-                <property name="[0]" type="object">
-                <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
-                    <property name="x1" type="double">353.0000000000001</property>
-                    <property name="y1" type="double">578.0</property>
-                    <property name="x2" type="double">357.0000000000001</property>
-                    <property name="y2" type="double">1446.0</property>
-                </object>
-                </property>
-            </property>
-            <property name="worldlengths" type="array" class="[Ljava.lang.Double;">
-                <property name="[0]" type="double">100.0</property>
-            </property>
-        </object>
-        </property>
-        <property name="item" type="object">
-        <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure">
-            <property name="name" type="string">cinta B</property>
-            <property name="color" type="object">
-            <object class="java.awt.Color">
-                <property name="red" type="int">0</property>
-                <property name="green" type="int">0</property>
-                <property name="blue" type="int">0</property>
-                <property name="alpha" type="int">255</property>
-            </object>
-            </property>
-            <property name="footprint" type="string">Footprint.DoubleArrow</property>
-            <property name="visible" type="boolean">true</property>
-            <property name="trail" type="boolean">false</property>
-            <property name="fixedtape" type="boolean">true</property>
-            <property name="fixedlength" type="boolean">true</property>
-            <property name="readonly" type="boolean">true</property>
-            <property name="stickmode" type="boolean">false</property>
-            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
-                <property name="[0]" type="object">
-                <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
-                    <property name="x1" type="double">92.00000000000011</property>
-                    <property name="y1" type="double">957.5</property>
-                    <property name="x2" type="double">354.5</property>
-                    <property name="y2" type="double">957.5</property>
-                </object>
-                </property>
-            </property>
-            <property name="worldlengths" type="array" class="[Ljava.lang.Double;">
-                <property name="[0]" type="double">100.0</property>
+                <property name="array" type="string">{{217.5,901.0,672.5,959.0,668.5,828.0}}</property>
             </property>
         </object>
         </property>
     </property>
-    <property name="selectedtrack" type="string">cinta B</property>
+    <property name="selectedtrack" type="string">transportador A</property>
     <property name="dividers" type="array" class="[D">
-        <property name="array" type="string">{0.7012098895318254,0.5,1.0,0.18200946870068385}</property>
+        <property name="array" type="string">{0.7006838506049448,0.5,1.0,0.18200946870068385}</property>
     </property>
     <property name="views" type="array" class="[[Lorg.opensourcephysics.cabrillo.tracker.TView;">
         <property name="[0]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
-            <property name="[0]" type="object">
-            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
-                <property name="selected_track" type="string">cinta B</property>
-            </object>
-            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">cinta B</property>
+                <property name="selected_track" type="string">transportador A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
@@ -241,14 +170,9 @@
             </property>
         </property>
         <property name="[1]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
-            <property name="[0]" type="object">
-            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
-                <property name="selected_track" type="string">cinta B</property>
-            </object>
-            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">cinta B</property>
+                <property name="selected_track" type="string">transportador A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
@@ -284,14 +208,9 @@
             </property>
         </property>
         <property name="[2]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
-            <property name="[0]" type="object">
-            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
-                <property name="selected_track" type="string">cinta B</property>
-            </object>
-            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">cinta B</property>
+                <property name="selected_track" type="string">transportador A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
@@ -327,14 +246,9 @@
             </property>
         </property>
         <property name="[3]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
-            <property name="[0]" type="object">
-            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
-                <property name="selected_track" type="string">cinta B</property>
-            </object>
-            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">cinta B</property>
+                <property name="selected_track" type="string">transportador A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>

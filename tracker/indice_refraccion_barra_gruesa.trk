@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object class="org.opensourcephysics.cabrillo.tracker.TrackerPanel">
     <property name="semantic_version" type="string">5.1.5</property>
-    <property name="width" type="double">1200.0</property>
-    <property name="height" type="double">1600.0</property>
-    <property name="magnification" type="double">4.0</property>
-    <property name="center_x" type="int">2800</property>
-    <property name="center_y" type="int">2716</property>
+    <property name="width" type="double">640.0</property>
+    <property name="height" type="double">352.0</property>
+    <property name="magnification" type="double">8.0</property>
+    <property name="center_x" type="int">2308</property>
+    <property name="center_y" type="int">791</property>
     <property name="videoclip" type="object">
     <object class="org.opensourcephysics.media.core.VideoClip">
         <property name="video" type="object">
-        <object class="org.opensourcephysics.media.core.ImageVideo">
-            <property name="paths" type="array" class="[Ljava.lang.String;">
-                <property name="[0]" type="string">../imagenes/angulo_critico_61.jpeg</property>
-            </property>
-            <property name="path" type="string">../imagenes/angulo_critico_61.jpeg</property>
-            <property name="delta_t" type="double">100.0</property>
+        <object class="org.opensourcephysics.media.xuggle.XuggleVideo">
+            <property name="path" type="string">../videos/indice_refraccion_barra_gruesa.mp4</property>
         </object>
         </property>
-        <property name="video_framecount" type="int">10</property>
+        <property name="video_framecount" type="int">610</property>
         <property name="startframe" type="int">0</property>
         <property name="stepsize" type="int">1</property>
-        <property name="stepcount" type="int">10</property>
+        <property name="stepcount" type="int">610</property>
         <property name="starttime" type="double">0.0</property>
         <property name="readout" type="string">frame</property>
         <property name="playallsteps" type="boolean">true</property>
@@ -29,8 +25,8 @@
     <property name="clipcontrol" type="object">
     <object class="org.opensourcephysics.media.core.StepperClipControl">
         <property name="rate" type="double">1.0</property>
-        <property name="delta_t" type="double">100.0</property>
-        <property name="frame" type="int">0</property>
+        <property name="delta_t" type="double">33.159022076263454</property>
+        <property name="frame" type="int">399</property>
     </object>
     </property>
     <property name="coords" type="object">
@@ -42,17 +38,17 @@
         <property name="framedata" type="array" class="[Lorg.opensourcephysics.media.core.ImageCoordSystem$FrameData;">
             <property name="[0]" type="object">
             <object class="org.opensourcephysics.media.core.ImageCoordSystem$FrameData">
-                <property name="xorigin" type="double">614.0</property>
-                <property name="yorigin" type="double">817.0</property>
-                <property name="angle" type="double">-0.391759908541113</property>
-                <property name="xscale" type="double">68.75409078738515</property>
-                <property name="yscale" type="double">68.75409078738515</property>
+                <property name="xorigin" type="double">278.5</property>
+                <property name="yorigin" type="double">155.125</property>
+                <property name="angle" type="double">23.877082211474416</property>
+                <property name="xscale" type="double">1.0</property>
+                <property name="yscale" type="double">1.0</property>
             </object>
             </property>
         </property>
     </object>
     </property>
-    <property name="length_unit" type="string">cm</property>
+    <property name="length_unit" type="string">m</property>
     <property name="mass_unit" type="string">kg</property>
     <property name="units_visible" type="boolean">true</property>
     <property name="tracks" type="collection" class="java.util.ArrayList">
@@ -73,70 +69,67 @@
         </object>
         </property>
         <property name="item" type="object">
-        <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure">
-            <property name="name" type="string">vara de calibración A</property>
+        <object class="org.opensourcephysics.cabrillo.tracker.Protractor">
+            <property name="name" type="string">transportador A</property>
             <property name="color" type="object">
             <object class="java.awt.Color">
-                <property name="red" type="int">0</property>
+                <property name="red" type="int">255</property>
                 <property name="green" type="int">0</property>
-                <property name="blue" type="int">255</property>
+                <property name="blue" type="int">0</property>
                 <property name="alpha" type="int">255</property>
             </object>
             </property>
-            <property name="footprint" type="string">Footprint.BoldDoubleTarget</property>
+            <property name="footprint" type="string">ProtractorFootprint.Circle3Bold</property>
             <property name="visible" type="boolean">true</property>
             <property name="trail" type="boolean">false</property>
-            <property name="fixedtape" type="boolean">true</property>
-            <property name="fixedlength" type="boolean">true</property>
-            <property name="readonly" type="boolean">false</property>
-            <property name="stickmode" type="boolean">true</property>
-            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
-                <property name="[0]" type="object">
-                <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
-                    <property name="x1" type="double">450.0</property>
-                    <property name="y1" type="double">665.0</property>
-                    <property name="x2" type="double">587.5</property>
-                    <property name="y2" type="double">663.5</property>
-                </object>
-                </property>
-            </property>
-            <property name="worldlengths" type="array" class="[Ljava.lang.Double;">
-                <property name="[0]" type="double">2.0</property>
+            <property name="fixed" type="boolean">true</property>
+            <property name="framedata" type="array" class="[[D">
+                <property name="array" type="string">{{352.25,61.0,248.875,88.25,278.5,154.875}}</property>
             </property>
         </object>
         </property>
         <property name="item" type="object">
         <object class="org.opensourcephysics.cabrillo.tracker.Protractor">
-            <property name="name" type="string">transportador A</property>
+            <property name="name" type="string">transportador B</property>
             <property name="color" type="object">
             <object class="java.awt.Color">
-                <property name="red" type="int">0</property>
-                <property name="green" type="int">140</property>
-                <property name="blue" type="int">40</property>
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">255</property>
+                <property name="blue" type="int">0</property>
                 <property name="alpha" type="int">255</property>
             </object>
             </property>
-            <property name="footprint" type="string">ProtractorFootprint.Circle3</property>
+            <property name="footprint" type="string">ProtractorFootprint.Circle3Bold</property>
             <property name="visible" type="boolean">true</property>
             <property name="trail" type="boolean">false</property>
             <property name="fixed" type="boolean">true</property>
             <property name="framedata" type="array" class="[[D">
-                <property name="array" type="string">{{146.00000000000003,960.0,613.0,1089.0,613.0,815.0}}</property>
+                <property name="array" type="string">{{275.01071371309865,202.99800785628622,299.0,201.25,278.5,155.125}}</property>
             </property>
         </object>
         </property>
     </property>
     <property name="selectedtrack" type="string">transportador A</property>
     <property name="dividers" type="array" class="[D">
-        <property name="array" type="string">{0.7012098895318254,0.5,1.0,0.3498158863755918}</property>
+        <property name="array" type="string">{0.7101525512887954,0.5,1.0,0.3498158863755918}</property>
     </property>
     <property name="views" type="array" class="[[Lorg.opensourcephysics.cabrillo.tracker.TView;">
         <property name="[0]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">transportador B</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">transportador A</property>
+                <property name="selected_track" type="string">transportador B</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
+                        <property name="[0]" type="string">transportador B</property>
+                        <property name="[1]" type="string">t</property>
+                        <property name="[2]" type="string">θ</property>
+                    </property>
+                    <property name="[1]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
                         <property name="[1]" type="string">t</property>
                         <property name="[2]" type="string">θ</property>
@@ -144,6 +137,28 @@
                 </property>
                 <property name="column_formats" type="array" class="[[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[[Ljava.lang.String;">
+                        <property name="[0]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">t</property>
+                            <property name="[2]" type="string">0.000</property>
+                        </property>
+                        <property name="[1]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">θ</property>
+                            <property name="[2]" type="string">0.0</property>
+                        </property>
+                        <property name="[2]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">step</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                        <property name="[3]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">frame</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                    </property>
+                    <property name="[1]" type="array" class="[[Ljava.lang.String;">
                         <property name="[0]" type="array" class="[Ljava.lang.String;">
                             <property name="[0]" type="string">transportador A</property>
                             <property name="[1]" type="string">t</property>
@@ -170,11 +185,21 @@
             </property>
         </property>
         <property name="[1]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">transportador B</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
                 <property name="selected_track" type="string">transportador A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
+                        <property name="[0]" type="string">transportador B</property>
+                        <property name="[1]" type="string">t</property>
+                        <property name="[2]" type="string">θ</property>
+                    </property>
+                    <property name="[1]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
                         <property name="[1]" type="string">t</property>
                         <property name="[2]" type="string">θ</property>
@@ -182,6 +207,28 @@
                 </property>
                 <property name="column_formats" type="array" class="[[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[[Ljava.lang.String;">
+                        <property name="[0]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">t</property>
+                            <property name="[2]" type="string">0.000</property>
+                        </property>
+                        <property name="[1]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">θ</property>
+                            <property name="[2]" type="string">0.0</property>
+                        </property>
+                        <property name="[2]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">step</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                        <property name="[3]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">frame</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                    </property>
+                    <property name="[1]" type="array" class="[[Ljava.lang.String;">
                         <property name="[0]" type="array" class="[Ljava.lang.String;">
                             <property name="[0]" type="string">transportador A</property>
                             <property name="[1]" type="string">t</property>
@@ -208,11 +255,21 @@
             </property>
         </property>
         <property name="[2]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">transportador B</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">transportador A</property>
+                <property name="selected_track" type="string">transportador B</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
+                        <property name="[0]" type="string">transportador B</property>
+                        <property name="[1]" type="string">t</property>
+                        <property name="[2]" type="string">θ</property>
+                    </property>
+                    <property name="[1]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
                         <property name="[1]" type="string">t</property>
                         <property name="[2]" type="string">θ</property>
@@ -220,6 +277,28 @@
                 </property>
                 <property name="column_formats" type="array" class="[[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[[Ljava.lang.String;">
+                        <property name="[0]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">t</property>
+                            <property name="[2]" type="string">0.000</property>
+                        </property>
+                        <property name="[1]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">θ</property>
+                            <property name="[2]" type="string">0.0</property>
+                        </property>
+                        <property name="[2]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">step</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                        <property name="[3]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">frame</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                    </property>
+                    <property name="[1]" type="array" class="[[Ljava.lang.String;">
                         <property name="[0]" type="array" class="[Ljava.lang.String;">
                             <property name="[0]" type="string">transportador A</property>
                             <property name="[1]" type="string">t</property>
@@ -246,11 +325,21 @@
             </property>
         </property>
         <property name="[3]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">transportador B</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">transportador A</property>
+                <property name="selected_track" type="string">transportador B</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
+                        <property name="[0]" type="string">transportador B</property>
+                        <property name="[1]" type="string">t</property>
+                        <property name="[2]" type="string">θ</property>
+                    </property>
+                    <property name="[1]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">transportador A</property>
                         <property name="[1]" type="string">t</property>
                         <property name="[2]" type="string">θ</property>
@@ -258,6 +347,28 @@
                 </property>
                 <property name="column_formats" type="array" class="[[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[[Ljava.lang.String;">
+                        <property name="[0]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">t</property>
+                            <property name="[2]" type="string">0.000</property>
+                        </property>
+                        <property name="[1]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">θ</property>
+                            <property name="[2]" type="string">0.0</property>
+                        </property>
+                        <property name="[2]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">step</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                        <property name="[3]" type="array" class="[Ljava.lang.String;">
+                            <property name="[0]" type="string">transportador B</property>
+                            <property name="[1]" type="string">frame</property>
+                            <property name="[2]" type="string">0</property>
+                        </property>
+                    </property>
+                    <property name="[1]" type="array" class="[[Ljava.lang.String;">
                         <property name="[0]" type="array" class="[Ljava.lang.String;">
                             <property name="[0]" type="string">transportador A</property>
                             <property name="[1]" type="string">t</property>
@@ -303,4 +414,6 @@
         <property name="stretch_acceleration" type="int">1</property>
     </object>
     </property>
+    <property name="track_control_x" type="int">12</property>
+    <property name="track_control_y" type="int">117</property>
 </object>
