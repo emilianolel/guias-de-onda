@@ -3,9 +3,9 @@
     <property name="semantic_version" type="string">5.1.5</property>
     <property name="width" type="double">1200.0</property>
     <property name="height" type="double">1600.0</property>
-    <property name="magnification" type="double">0.5</property>
-    <property name="center_x" type="int">799</property>
-    <property name="center_y" type="int">429</property>
+    <property name="magnification" type="double">8.0</property>
+    <property name="center_x" type="int">3430</property>
+    <property name="center_y" type="int">6316</property>
     <property name="videoclip" type="object">
     <object class="org.opensourcephysics.media.core.VideoClip">
         <property name="video" type="object">
@@ -30,7 +30,7 @@
     <object class="org.opensourcephysics.media.core.StepperClipControl">
         <property name="rate" type="double">1.0</property>
         <property name="delta_t" type="double">100.0</property>
-        <property name="frame" type="int">0</property>
+        <property name="frame" type="int">3</property>
     </object>
     </property>
     <property name="coords" type="object">
@@ -124,26 +124,64 @@
             <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.LineProfile$FrameData;">
                 <property name="[0]" type="object">
                 <object class="org.opensourcephysics.cabrillo.tracker.LineProfile$FrameData">
-                    <property name="x1" type="double">195.36777011736206</property>
-                    <property name="y1" type="double">947.390874164518</property>
-                    <property name="x2" type="double">26.471922530394068</property>
-                    <property name="y2" type="double">835.7727488026933</property>
+                    <property name="x1" type="double">346.855797063312</property>
+                    <property name="y1" type="double">748.1655702331464</property>
+                    <property name="x2" type="double">177.95994947634404</property>
+                    <property name="y2" type="double">636.5474448713217</property>
                 </object>
                 </property>
             </property>
             <property name="horizontal" type="boolean">false</property>
         </object>
         </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure">
+            <property name="name" type="string">cinta A</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">0</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">0</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.DoubleArrow</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">false</property>
+            <property name="fixedtape" type="boolean">true</property>
+            <property name="fixedlength" type="boolean">true</property>
+            <property name="readonly" type="boolean">true</property>
+            <property name="stickmode" type="boolean">false</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
+                <property name="[0]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
+                    <property name="x1" type="double">478.0</property>
+                    <property name="y1" type="double">807.125</property>
+                    <property name="x2" type="double">478.0</property>
+                    <property name="y2" type="double">792.375</property>
+                </object>
+                </property>
+            </property>
+            <property name="worldlengths" type="array" class="[Ljava.lang.Double;">
+                <property name="[0]" type="double">100.0</property>
+            </property>
+        </object>
+        </property>
     </property>
-    <property name="selectedtrack" type="string">perfil_reflejada_31</property>
+    <property name="selectedtrack" type="string">cinta A</property>
     <property name="dividers" type="array" class="[D">
-        <property name="array" type="string">{0.8442924776433456,0.5,1.0,0.18148342977380327}</property>
+        <property name="array" type="string">{0.6847710330138446,0.49943630214205187,1.0,0.36741214057507987}</property>
     </property>
     <property name="views" type="array" class="[[Lorg.opensourcephysics.cabrillo.tracker.TView;">
         <property name="[0]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">cinta A</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">perfil_reflejada_31</property>
+                <property name="selected_track" type="string">cinta A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">perfil_reflejada_31</property>
@@ -191,9 +229,14 @@
             </property>
         </property>
         <property name="[1]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">cinta A</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">perfil_reflejada_31</property>
+                <property name="selected_track" type="string">cinta A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">perfil_reflejada_31</property>
@@ -241,9 +284,14 @@
             </property>
         </property>
         <property name="[2]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">cinta A</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">perfil_reflejada_31</property>
+                <property name="selected_track" type="string">cinta A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">perfil_reflejada_31</property>
@@ -291,9 +339,14 @@
             </property>
         </property>
         <property name="[3]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">cinta A</property>
+            </object>
+            </property>
             <property name="[1]" type="object">
             <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
-                <property name="selected_track" type="string">perfil_reflejada_31</property>
+                <property name="selected_track" type="string">cinta A</property>
                 <property name="track_columns" type="array" class="[[Ljava.lang.String;">
                     <property name="[0]" type="array" class="[Ljava.lang.String;">
                         <property name="[0]" type="string">perfil_reflejada_31</property>
